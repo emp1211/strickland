@@ -1,0 +1,145 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico">
+        <link rel="stylesheet" href="./resources/css/reset.css">
+        <link rel="stylesheet" href="./resources/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Passion+One:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script type="module" src="./resources/gmaps.js"></script>
+        <title>Strickland Propane</title>
+    </head>
+
+    <body>
+
+    <!--//////   POPUP AD   //////-->
+
+        <div id="ad" class="popup">
+            <p class="ad-description">Grillstravagansa Sale Ends Soon! 25% OFF all propane tanks</p>
+            <div class="countdown-container">
+                <div class="digit-label-cont">
+                    <div id="hrs" class="digit"></div>
+                    <div class="hrs time-labels">Hrs</div>
+                </div>    
+                <span>:</span>
+                <div class="digit-label-cont">
+                    <div id="min" class="digit"></div>
+                    <div class="min time-labels">Min</div>
+                </div>    
+                <span>:</span>
+                <div class="digit-label-cont">
+                    <div id="sec" class="digit"></div>
+                    <div class="sec time-labels">Sec</div>
+                </div>
+            </div>
+        </div>
+
+    <!--//////   NAVBAR AND MAIN CONTENT   //////-->
+
+        
+        <div class="overlay">
+            <div class="banner">
+                <div class="header-dropdown-wrapper">
+                    <header>
+                        <img src="./resources/images/bluestar.webp" alt="Blue star logo" class="logo-mobile">
+                        <nav class="navbar">                
+                            <a class="navlinks left" href="#about">About</a>
+                            <a class="navlinks left" href="#team">Team</a>
+                            <a class="navlinks" href="#"><img class="logo" src="./resources/images/bluestar.webp" alt="Blue star flame logo"></a>
+                            <a class="navlinks right" href="#visit">Visit</a>
+                            <a class="navlinks right" href="#">Info</a>                
+                        </nav>
+                        <button id="dropdown-menu" class="dropdown-menu">
+                            <img src="./resources/images/outline_menu_black_24dp.png" alt="" class="menu">
+                        </button>
+                    </header>
+                    <div id="dropdown-nav" class="dropdown-nav">
+                        <a href="#about" class="droplinks">About</a>
+                        <a href="#team" class="droplinks">Team</a>
+                        <a href="#visit" class="droplinks">Visit</a>
+                        <a href="#" class="droplinks">Info</a>
+                    </div> 
+                </div>
+                <div class="main">
+                    <h1 class="company-title">Strickland</h1>
+                    <h1 class="company-title-2">Propane</h1>
+                    <hr>
+                    <span class="arlen">Arlen&#8217;s number one dealer</span>
+                    <span class="arlen">of propane and propane </span>    
+                    <span class="arlen">accessories</span>
+                </div>
+            </div>
+        </div>
+
+    <!--//////   PRODUCTS AND SERVICES SECTION   //////-->
+
+        <section id="about" class="about-container">
+            <h2 class="about-title">Products, Services, and Values:</h2>
+            <div class="polaroid">
+                <h2 class="polaroid-title">Grills</h2>
+                <img src="./resources/images/office.jpg" alt="The Vogner Char-King propane grill" class="polaroid-img">
+                <p class="polaroid-description">We carry the most state-of-the-art grills like the Vogner Char-King and Char-King Imperiale</p>
+            </div>
+            <div class="polaroid">
+                <h2 class="polaroid-title">Family</h2>
+                <img src="./resources/images/grillin.webp" alt="Hank grilling with his family" class="polaroid-img">
+                <p class="polaroid-description">Nothing brings family together like delicious food cooked on one of our state-of-the-art grills</p>
+            </div>
+            <div class="polaroid">
+                <h2 class="polaroid-title">Service</h2>
+                <img src="./resources/images/flame-jacket.jpg" alt="Hank and Buck receiving their hall of flame jackets" class="polaroid-img">
+                <p class="polaroid-description">Year after year, our award-winning team is recognized for their dedicated service to our customers</p>
+            </div>
+            <div class="polaroid">
+                <h2 class="polaroid-title">Flavor</h2>
+                <img src="./resources/images/steak.png" alt="placeholder" class="polaroid-img">
+                <p class="polaroid-description">Experience the pure taste of steak cooked with clean-burning propane: "Taste the Meat, Not the Heat"</p>
+            </div>
+            <div class="polaroid">
+                <h2 class="polaroid-title">Environment</h2>
+                <img src="./resources/images/probot.jpg" alt="placeholder" class="polaroid-img">
+                <p class="polaroid-description">See how we use our recycled tanks to support local artists and keep Arlen beautiful</p>
+            </div>
+        </section>
+
+    <!--//////   TEAM   //////-->
+
+        <section id="team" class="team-container">
+            <h2 class="team-title">Our Team:</h2>
+            <div class="circle">        
+                <img src="./resources/images/flame-jacket2.jpg" alt="">
+                <span class="name">Buck Strickland</span>
+                <span class="job-title">Owner</span>
+            </div>
+            <div class="circle">
+                <img src="./resources/images/hank2.jpg" alt="">
+                <span class="name">Hank Hill</span>
+                <span class="job-title">Senior Assistant Manager</span>
+            </div>
+            <div class="circle">
+                <img src="./resources/images/enrique.png" alt="">
+                <span class="name">Enrique</span>
+                <span class="job-title">Delivery</span>
+            </div>
+        </section>
+
+    <!--//////   FOOTER   //////-->
+
+        <footer id="visit">
+            <span class="visit">Come Visit Our Showroom:</span>
+            <span class="address">135 Los Gatos Road</span>
+            <span class="address">Arlen, Texas 57575</span>
+            <div class="showroom-container">
+                <div id="map" ></div>
+            </div>
+            <p class="disclaimer">Disclaimer: This is a mock site that represents a fictional company from an animated television series. It is strictly for the demonstration of web development techniques and does not profit from the use of images or likenesses from the television series &#8220;King of the Hill.&#8221;</p>
+        </footer>
+
+        <script src="./resources/popup.js"></script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnB7Uj3r0IzQuYMeEUj751VerOCGI5zT8&callback=initMap"></script>
+    </body>
+</html>
